@@ -1,15 +1,15 @@
-def Hcf():
+def lcm():
     x=int(input("Enter your number1:"))
     y=int(input("Enter your number2:"))
-    if x<y:
+    if x>y:
         num=x
     else:
         num=y
     while 1:
-        if ((x%num==0)and(y%num==0)):
+        if ((num%x==0)and(num%y==0)):
             lcm=num
             break
-        num-=1
-    print(f'{num} is the Highest common factor')
+        num+=1
+    print(f'{num} is the Least common multiple')
 if __name__ == "__main__":
-    Hcf()
+    lcm()

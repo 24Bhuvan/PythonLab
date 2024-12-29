@@ -1,7 +1,7 @@
 def Hcf():
     x=int(input("Enter your number1:"))
     y=int(input("Enter your number1:"))
-    if x>y:
+    if x<y:
         num=x
     else:
         num=y

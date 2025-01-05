@@ -8,6 +8,9 @@ def palindrome():
     ans=[]
     for i in range(length_of_list-1,-1,-1):
         ans.append(li[i])
-    print(ans)
+    if li==ans:
+        return f"{li} is an palindrome"
+    else :
+        return f"{li} is not a palindrome"
 if __name__=="__main__":
-    palindrome()
+    print(palindrome())
